@@ -1,0 +1,154 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+LIBS:tennLogo
+LIBS:ArduinoShield-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Mega2560_Shield XA1
+U 1 1 5AC0677E
+P 6500 2550
+F 0 "XA1" V 6600 2550 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" V 6400 2550 60  0000 C CNN
+F 2 "Arduino:Arduino_Mega2560_Shield" H 7200 5300 60  0001 C CNN
+F 3 "" H 7200 5300 60  0001 C CNN
+	1    6500 2550
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 10500 1350 550  1300
+U 5AC0684B
+F0 "Stepper" 60
+F1 "stepperControl.sch" 60
+F2 "PulX" I L 10500 1500 60 
+F3 "dirX" I L 10500 1600 60 
+F4 "enaX" I L 10500 1700 60 
+F5 "pulY" I L 10500 1900 60 
+F6 "dirY" I L 10500 2000 60 
+F7 "enaY" I L 10500 2100 60 
+F8 "pulZ" I L 10500 2300 60 
+F9 "dirZ" I L 10500 2400 60 
+F10 "enaZ" I L 10500 2500 60 
+$EndSheet
+Wire Wire Line
+	7800 1500 10500 1500
+Wire Wire Line
+	10500 1900 8400 1900
+Wire Wire Line
+	8400 1900 8400 1400
+Wire Wire Line
+	8400 1400 7800 1400
+Wire Wire Line
+	10500 2300 8350 2300
+Wire Wire Line
+	8350 2300 8350 1200
+Wire Wire Line
+	8350 1200 7800 1200
+Wire Wire Line
+	10500 1600 7800 1600
+Wire Wire Line
+	10500 1700 7800 1700
+Wire Wire Line
+	10500 2000 10250 2000
+Wire Wire Line
+	10250 2000 10250 1800
+Wire Wire Line
+	10250 1800 7800 1800
+Wire Wire Line
+	10500 2100 8250 2100
+Wire Wire Line
+	8250 2100 8250 1900
+Wire Wire Line
+	8250 1900 7800 1900
+Wire Wire Line
+	10500 2400 10200 2400
+Wire Wire Line
+	10200 2400 10200 2000
+Wire Wire Line
+	10200 2000 7800 2000
+Wire Wire Line
+	10500 2500 8150 2500
+Wire Wire Line
+	8150 2500 8150 2100
+Wire Wire Line
+	8150 2100 7800 2100
+NoConn ~ 6250 -50 
+NoConn ~ 6350 -50 
+NoConn ~ 6450 -50 
+NoConn ~ 6550 -50 
+NoConn ~ 6650 -50 
+NoConn ~ 6750 -50 
+NoConn ~ 5200 3500
+Wire Wire Line
+	5200 3800 5200 4200
+Connection ~ 5200 4000
+Connection ~ 5200 4100
+Connection ~ 5200 3900
+Wire Wire Line
+	5050 3800 5200 3800
+$Comp
+L GND #PWR01
+U 1 1 5AC0DC4E
+P 5050 3900
+F 0 "#PWR01" H 5050 3650 50  0001 C CNN
+F 1 "GND" H 5050 3750 50  0000 C CNN
+F 2 "" H 5050 3900 50  0001 C CNN
+F 3 "" H 5050 3900 50  0001 C CNN
+	1    5050 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 3900 5050 3800
+Connection ~ 5050 3800
+NoConn ~ 5200 4300
+$Sheet
+S 1650 2000 500  1100
+U 5AC10749
+F0 "force" 60
+F1 "flexiForceSensor.sch" 60
+$EndSheet
+$EndSCHEMATC
