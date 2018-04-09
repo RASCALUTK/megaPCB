@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -47,17 +47,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Arduino_Mega2560_Shield XA1
-U 1 1 5AC0677E
-P 6250 4100
-F 0 "XA1" V 6350 4100 60  0000 C CNN
-F 1 "Arduino_Mega2560_Shield" V 6150 4100 60  0000 C CNN
-F 2 "Arduino:Arduino_Mega2560_Shield" H 6950 6850 60  0001 C CNN
-F 3 "" H 6950 6850 60  0001 C CNN
-	1    6250 4100
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 10250 2900 550  1300
 U 5AC0684B
@@ -115,12 +104,6 @@ Wire Wire Line
 	7900 4050 7900 3650
 Wire Wire Line
 	7900 3650 7550 3650
-NoConn ~ 6000 1500
-NoConn ~ 6100 1500
-NoConn ~ 6200 1500
-NoConn ~ 6300 1500
-NoConn ~ 6400 1500
-NoConn ~ 6500 1500
 NoConn ~ 4950 5050
 Wire Wire Line
 	4950 5350 4950 5750
@@ -130,10 +113,10 @@ Connection ~ 4950 5450
 Wire Wire Line
 	4800 5350 4950 5350
 $Comp
-L GND #PWR1
+L GND #PWR01
 U 1 1 5AC0DC4E
 P 4800 5450
-F 0 "#PWR1" H 4800 5200 50  0001 C CNN
+F 0 "#PWR01" H 4800 5200 50  0001 C CNN
 F 1 "GND" H 4800 5300 50  0000 C CNN
 F 2 "" H 4800 5450 50  0001 C CNN
 F 3 "" H 4800 5450 50  0001 C CNN
@@ -159,4 +142,27 @@ F1 "vfd.sch" 60
 $EndSheet
 Wire Wire Line
 	1350 3250 4950 3250
+$Comp
+L Arduino_Mega2560_Shield XA1
+U 1 1 5AC0677E
+P 6250 4100
+F 0 "XA1" V 6350 4100 60  0000 C CNN
+F 1 "Arduino_Mega2560_Shield" V 6150 4100 60  0000 C CNN
+F 2 "Arduino:Arduino_Mega2560_Shield" H 6950 6850 60  0001 C CNN
+F 3 "" H 6950 6850 60  0001 C CNN
+	1    6250 4100
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4050 600  550  600 
+U 5ACC3536
+F0 "max6675" 60
+F1 "max6675.sch" 60
+$EndSheet
+$Sheet
+S 800  3650 600  400 
+U 5ACC37CA
+F0 "ASC712" 60
+F1 "asc712.sch" 60
+$EndSheet
 $EndSCHEMATC
