@@ -1,4 +1,4 @@
-update=4/1/2018 2:13:08 AM
+update=4/6/2018 3:38:09 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=arduino-kicad-library-master
@@ -63,3 +61,5 @@ LibName31=contrib
 LibName32=valves
 LibName33=arduino-kicad-library-master/arduino-kicad-library-master/arduino
 LibName34=tennLogo
+[general]
+version=1

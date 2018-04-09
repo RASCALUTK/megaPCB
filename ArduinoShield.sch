@@ -31,7 +31,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:arduino
 LIBS:tennLogo
 LIBS:ArduinoShield-cache
 EELAYER 25 0
@@ -131,10 +130,10 @@ Connection ~ 4950 5450
 Wire Wire Line
 	4800 5350 4950 5350
 $Comp
-L GND #PWR01
+L GND #PWR1
 U 1 1 5AC0DC4E
 P 4800 5450
-F 0 "#PWR01" H 4800 5200 50  0001 C CNN
+F 0 "#PWR1" H 4800 5200 50  0001 C CNN
 F 1 "GND" H 4800 5300 50  0000 C CNN
 F 2 "" H 4800 5450 50  0001 C CNN
 F 3 "" H 4800 5450 50  0001 C CNN
@@ -146,15 +145,18 @@ Wire Wire Line
 Connection ~ 4800 5350
 NoConn ~ 4950 5850
 $Sheet
-S 1650 1000 1100 500 
+S 800  3100 550  300 
 U 5AC10749
 F0 "force" 60
 F1 "flexiForceSensor.sch" 60
+F2 "forceOut" I R 1350 3250 60 
 $EndSheet
 $Sheet
-S 1800 2000 500  350 
+S 800  2250 500  350 
 U 5AC11210
 F0 "vfd" 60
 F1 "vfd.sch" 60
 $EndSheet
+Wire Wire Line
+	1350 3250 4950 3250
 $EndSCHEMATC
