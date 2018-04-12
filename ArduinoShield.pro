@@ -1,4 +1,4 @@
-update=4/9/2018 4:04:18 PM
+update=4/11/2018 8:53:52 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,7 +59,7 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=arduino-kicad-library-master/arduino-kicad-library-master/arduino
-LibName34=tennLogo
+LibName33=tennLogo
+LibName34=ArduinoShield-cache
 [general]
 version=1
