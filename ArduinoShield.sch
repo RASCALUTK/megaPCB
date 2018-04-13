@@ -114,54 +114,12 @@ F3 "CS" I L 10300 5400 60
 F4 "SCK" I L 10300 5250 60 
 $EndSheet
 $Sheet
-S 800  3600 600  400 
+S 1400 5050 600  400 
 U 5ACC37CA
 F0 "ASC712" 60
 F1 "asc712.sch" 60
-F2 "currentSensor" I R 1400 3800 60 
+F2 "currentSensor" I R 2000 5250 60 
 $EndSheet
-Wire Wire Line
-	7550 3050 10250 3050
-Wire Wire Line
-	10250 3450 8150 3450
-Wire Wire Line
-	8150 3450 8150 2950
-Wire Wire Line
-	8150 2950 7550 2950
-Wire Wire Line
-	10250 3850 8100 3850
-Wire Wire Line
-	8100 3850 8100 2750
-Wire Wire Line
-	8100 2750 7550 2750
-Wire Wire Line
-	10250 3150 7550 3150
-Wire Wire Line
-	10250 3250 7550 3250
-Wire Wire Line
-	10250 3550 10000 3550
-Wire Wire Line
-	10000 3550 10000 3350
-Wire Wire Line
-	10000 3350 7550 3350
-Wire Wire Line
-	10250 3650 8000 3650
-Wire Wire Line
-	8000 3650 8000 3450
-Wire Wire Line
-	8000 3450 7550 3450
-Wire Wire Line
-	10250 3950 9950 3950
-Wire Wire Line
-	9950 3950 9950 3550
-Wire Wire Line
-	9950 3550 7550 3550
-Wire Wire Line
-	10250 4050 7900 4050
-Wire Wire Line
-	7900 4050 7900 3650
-Wire Wire Line
-	7900 3650 7550 3650
 Wire Wire Line
 	4950 5350 4950 5750
 Connection ~ 4950 5550
