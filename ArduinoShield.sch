@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -67,10 +67,10 @@ F13 "enaX0" I L 10300 1600 60
 $EndSheet
 NoConn ~ 4950 5050
 $Comp
-L GND #PWR01
+L GND #PWR1
 U 1 1 5AC0DC4E
 P 4800 5450
-F 0 "#PWR01" H 4800 5200 50  0001 C CNN
+F 0 "#PWR1" H 4800 5200 50  0001 C CNN
 F 1 "GND" H 4800 5300 50  0000 C CNN
 F 2 "" H 4800 5450 50  0001 C CNN
 F 3 "" H 4800 5450 50  0001 C CNN
@@ -86,15 +86,15 @@ F1 "flexiForceSensor.sch" 60
 F2 "forceOut" I R 1350 3250 60 
 $EndSheet
 $Sheet
-S 3200 5650 850  1050
+S 5650 6850 1050 850 
 U 5AC11210
 F0 "vfd" 60
 F1 "vfd.sch" 60
-F2 "speedAnalogIn" I R 4050 5750 60 
-F3 "Forward/Stop" I R 4050 5950 60 
-F4 "Reverse/Stop" I R 4050 6150 60 
-F5 "externalFault" I R 4050 6350 60 
-F6 "jog" I R 4050 6500 60 
+F2 "speedAnalogIn" I T 5750 6850 60 
+F3 "Forward/Stop" I T 5950 6850 60 
+F4 "Reverse/Stop" I T 6150 6850 60 
+F5 "externalFault" I T 6350 6850 60 
+F6 "jog" I T 6500 6850 60 
 $EndSheet
 $Comp
 L Arduino_Mega2560_Shield XA1
@@ -117,11 +117,11 @@ F3 "CS" I L 10300 5400 60
 F4 "SCK" I L 10300 5250 60 
 $EndSheet
 $Sheet
-S 1400 5050 600  400 
+S 850  3550 600  400 
 U 5ACC37CA
 F0 "ASC712" 60
 F1 "asc712.sch" 60
-F2 "currentSensor" I R 2000 5250 60 
+F2 "currentSensor" I R 1450 3750 60 
 $EndSheet
 Wire Wire Line
 	4950 5350 4950 5750
@@ -155,10 +155,10 @@ Wire Wire Line
 Wire Wire Line
 	4700 5750 4950 5750
 $Comp
-L +5V #PWR02
+L +5V #PWR2
 U 1 1 5ACF49DF
 P 4800 5950
-F 0 "#PWR02" H 4800 5800 50  0001 C CNN
+F 0 "#PWR2" H 4800 5800 50  0001 C CNN
 F 1 "+5V" H 4800 6090 50  0000 C CNN
 F 2 "" H 4800 5950 50  0001 C CNN
 F 3 "" H 4800 5950 50  0001 C CNN
@@ -171,9 +171,21 @@ Connection ~ 4950 6050
 Wire Wire Line
 	4950 5950 4800 5950
 $Sheet
-S 9100 4650 500  1300
+S 9100 4650 550  1100
 U 5AD7D65A
 F0 "axis stops" 60
 F1 "file5AD7D659.sch" 60
+F2 "xMin" I L 9100 4800 60 
+F3 "xMax" I L 9100 4900 60 
+F4 "zMin" I L 9100 5100 60 
+F5 "zMax" I L 9100 5200 60 
+F6 "yMin" I L 9100 5450 60 
+F7 "yMax" I L 9100 5600 60 
+$EndSheet
+$Sheet
+S 1350 5700 500  1000
+U 5AD82948
+F0 "linearAct" 60
+F1 "file5AD82947.sch" 60
 $EndSheet
 $EndSCHEMATC
