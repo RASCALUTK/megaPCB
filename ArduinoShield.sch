@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -48,19 +48,22 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 10250 2900 550  1300
+S 10300 1150 550  2400
 U 5AC0684B
 F0 "Stepper" 60
 F1 "stepperControl.sch" 60
-F2 "PulX" I L 10250 3050 60 
-F3 "dirX" I L 10250 3150 60 
-F4 "enaX" I L 10250 3250 60 
-F5 "pulY" I L 10250 3450 60 
-F6 "dirY" I L 10250 3550 60 
-F7 "enaY" I L 10250 3650 60 
-F8 "pulZ" I L 10250 3850 60 
-F9 "dirZ" I L 10250 3950 60 
-F10 "enaZ" I L 10250 4050 60 
+F2 "pulY" I L 10300 2400 60 
+F3 "dirY" I L 10300 2550 60 
+F4 "enaY" I L 10300 2700 60 
+F5 "pulZ" I L 10300 3050 60 
+F6 "dirZ" I L 10300 3200 60 
+F7 "enaZ" I L 10300 3350 60 
+F8 "PulX1" I L 10300 1800 60 
+F9 "dirX1" I L 10300 1950 60 
+F10 "enaX1" I L 10300 2100 60 
+F11 "PulX0" I L 10300 1300 60 
+F12 "dirX0" I L 10300 1450 60 
+F13 "enaX0" I L 10300 1600 60 
 $EndSheet
 NoConn ~ 4950 5050
 $Comp
@@ -167,4 +170,10 @@ Wire Wire Line
 Connection ~ 4950 6050
 Wire Wire Line
 	4950 5950 4800 5950
+$Sheet
+S 9100 4650 500  1300
+U 5AD7D65A
+F0 "axis stops" 60
+F1 "file5AD7D659.sch" 60
+$EndSheet
 $EndSCHEMATC
