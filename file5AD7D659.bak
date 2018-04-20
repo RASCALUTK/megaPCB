@@ -37,7 +37,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -70,10 +70,10 @@ F 3 "" H 3850 2100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Screw_Terminal_01x02 j24
+L Screw_Terminal_01x02 J32
 U 1 1 5AD7DA82
 P 4650 2050
-F 0 "j24" H 4650 2150 50  0000 C CNN
+F 0 "J32" H 4650 2200 50  0000 C CNN
 F 1 "zMin" H 4650 1850 50  0000 C CNN
 F 2 "Connectors_Terminal_Blocks:TerminalBlock_Altech_AK300-2_P5.00mm" H 4650 2050 50  0001 C CNN
 F 3 "" H 4650 2050 50  0001 C CNN
@@ -157,10 +157,10 @@ Wire Wire Line
 	6200 2300 6200 2600
 Connection ~ 6200 2600
 $Comp
-L +5V #PWR15
+L +5V #PWR016
 U 1 1 5AD7DF62
 P 2600 2500
-F 0 "#PWR15" H 2600 2350 50  0001 C CNN
+F 0 "#PWR016" H 2600 2350 50  0001 C CNN
 F 1 "+5V" H 2600 2640 50  0000 C CNN
 F 2 "" H 2600 2500 50  0001 C CNN
 F 3 "" H 2600 2500 50  0001 C CNN
